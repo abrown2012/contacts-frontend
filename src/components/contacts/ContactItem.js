@@ -7,7 +7,10 @@ const ContactItem = ({contact}) => {
     return (
         <div className='card bg-light'>
             <h3 className="text-primary text-left">
-                {name}{' '} <span className={'badge' + (type === 'professional' ? 'budge-success' : 'budge-primary')}>{type}</span> 
+                {name}{' '} 
+                <span className={'badge' + (type === 'professional' ? 'budge-success' : 'budge-primary')}>
+                    {type.charAt(0).toUpperCase() + type.slice(1)}
+                    </span> 
             </h3>
 
         </div>
