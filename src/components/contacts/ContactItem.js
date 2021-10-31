@@ -8,11 +8,22 @@ const ContactItem = ({contact}) => {
         <div className='card bg-light'>
             <h3 className="text-primary text-left">
                 {name}{' '} 
-                <span className={'badge' + (type === 'professional' ? 'budge-success' : 'budge-primary')}>
+                <span style={{ float: 'right'}} className={'badge' + (type === 'professional' ? 'budge-success' : 'budge-primary')}>
                     {type.charAt(0).toUpperCase() + type.slice(1)}
                     </span> 
             </h3>
-
+            <ul className="list">
+                {email && (
+                    <li>
+                        <i className="fas fa-envelope-open-text"></i> {email}
+                    </li>
+                )}
+                {phone && (
+                    <li>
+                        <i className="fas fa-phone-alt"></i> {email}
+                    </li>
+                )}
+            </ul>
         </div>
     )
 }
