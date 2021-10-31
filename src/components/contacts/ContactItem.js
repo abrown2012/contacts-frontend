@@ -20,10 +20,14 @@ const ContactItem = ({contact}) => {
                 )}
                 {phone && (
                     <li>
-                        <i className="fas fa-phone-alt"></i> {email}
+                        <i className="fas fa-phone-alt"></i> {phone}
                     </li>
                 )}
             </ul>
+            <p>
+                <button className='btn btn-dark btn-sm'>Edit</button>
+                <button className='btn btn-danger btn-sm'>Delete</button>
+            </p>
         </div>
     )
 }
