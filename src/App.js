@@ -8,11 +8,13 @@ import ContactState from './context/contact/ContactState'
 import AuthState from './context/auth/AuthState'
 import Signup from './components/auth/Signup'
 import Signin from './components/auth/Signin'
+import AlertState from './context/alert/AlertState'
 
 function App() {
   return (
     <AuthState>
     <ContactState>
+      <AlertState>
       <Router>
         <Navbar />
         <div className='container'>
@@ -25,6 +27,7 @@ function App() {
           </Switch>
         </div>
       </Router>
+      </AlertState>
     </ContactState>
     </AuthState>
   );
