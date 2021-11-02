@@ -14,13 +14,13 @@ const Signup = () => {
 
     const onSubmit = e => {
         e.preventDefualt();
-        
+        console.log("testing sign up")
     }
 
     return (
         <div className='form-container'>
             <h1>
-                Account <span className='text-primary'>Sign Up</span>
+                <span className='text-primary'>Sign Up</span>
             </h1>
             <form onSubmit={onSubmit}>
                 <div className="form-group">
