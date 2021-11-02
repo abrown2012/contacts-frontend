@@ -15,7 +15,7 @@ import {
 
 const AuthState = props => {
     const initialState = {
-        token: localStoreage.getItem('token'),
+        token: localStorage.getItem('token'),
         isAuthenticated: null, 
         loading: true, 
         user: null,
@@ -48,3 +48,5 @@ const AuthState = props => {
         </AuthContext.Provider>
 
     )}
+
+    export default AuthState

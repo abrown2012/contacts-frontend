@@ -5,9 +5,11 @@ import './App.css';
 import Home from './components/pages/Home'
 import About from './components/pages/About'
 import ContactState from './context/contact/ContactState'
+import AuthState from './context/auth/AuthState'
 
 function App() {
   return (
+    <AuthState>
     <ContactState>
       <Router>
         <Navbar />
@@ -20,6 +22,7 @@ function App() {
         </div>
       </Router>
     </ContactState>
+    </AuthState>
   );
 }
 
